@@ -1,0 +1,47 @@
+{
+  "apartments": [
+    {
+      "id": 1,
+      "name": "Feuerbach Wohnung",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Esszimmer",
+          "items": [
+            {
+              "id": 1,
+              "name": "Löffel",
+              "description": "Ein Löffel zum Essen"
+            },
+            {
+              "id": 2,
+              "name": "Teller",
+              "description": "Ein Teller zum Servieren von Speisen"
+            },
+            {
+              "id": 3,
+              "name": "Gläser",
+              "description": "Gläser für Getränke"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Schlafzimmer",
+          "items": [
+            {
+              "id": 4,
+              "name": "Bett",
+              "description": "Ein bequemes Bett zum Schlafen"
+            },
+            {
+              "id": 5,
+              "name": "Kleiderschrank",
+              "description": "Ein Schrank zum Aufbewahren von Kleidung"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
