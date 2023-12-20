@@ -1,0 +1,7 @@
+set dotenv-load := true
+
+_build-release:
+    cargo build --release --target $DEPLOY_TARGET_TRIPLE
+
+deploy: _build-release
+    rsync -v "{{justfile_directory()}}/target/${DEPLOY_TARGET_TRIPLE}/release/server" "${DEPLOY_HOST}:/root/findit/server" 
