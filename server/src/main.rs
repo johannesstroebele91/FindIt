@@ -33,7 +33,8 @@ const ADDR: &'static str = "127.0.0.1:3000";
 
 #[tokio::main]
 async fn main() {
-    let apartments_string = std::fs::read_to_string("apartment_mock.json").unwrap();
+    // let apartments_string = std::fs::read_to_string("apartment_mock.json").unwrap();
+    let apartments_string = include_str!("../apartment_mock.json");
     let app_state: AppState = serde_json::from_str(&apartments_string).unwrap();
     // build our application with a route
     let app = Router::new()
